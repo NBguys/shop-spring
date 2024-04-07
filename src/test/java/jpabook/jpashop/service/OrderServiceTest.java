@@ -79,7 +79,7 @@ class OrderServiceTest {
         int orderCount = 11;
 
         Assertions.assertThrows(NotEnoughStockException.class
-                , () -> orderService.order(member.getId(), item.getId(), 11));
+                , () -> orderService.order(member.getId(), item.getId(), orderCount));
     }
 
 
